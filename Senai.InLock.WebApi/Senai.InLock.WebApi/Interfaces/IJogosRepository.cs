@@ -9,5 +9,13 @@ namespace Senai.InLock.WebApi.Interfaces
     interface IJogosRepository
     {
         List<JogosDomain> Listar();
+
+        void Atualizar(int id, JogosDomain jogo);
+
+        void Deletar(int id);
+
+        JogosDomain BuscarPorId(int id);
+
+        void Cadastrar(JogosDomain novoJogo);
     }
 }
